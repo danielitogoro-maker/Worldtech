@@ -1,0 +1,316 @@
+
+/* CONFIGURACIÓN GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b1120;
+    color: #f1f5f9;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* BARRA DE NAVEGACIÓN */
+header {
+    background-color: #111827;
+    border-bottom: 1px solid #263449;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: #38bdf8;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #cbd5e1;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* PORTADA PRINCIPAL */
+.hero {
+    min-height: 430px;
+    padding: 90px 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: linear-gradient(135deg, #0b1120, #102b4c);
+}
+
+.etiqueta {
+    color: #38bdf8;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 6vw, 64px);
+    line-height: 1.1;
+    max-width: 750px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #38bdf8;
+}
+
+.hero p {
+    color: #cbd5e1;
+    max-width: 580px;
+    margin-bottom: 28px;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #0284c7;
+    color: white;
+    padding: 13px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.boton:hover {
+    background-color: #0369a1;
+}
+
+/* SECCIONES */
+.seccion {
+    padding: 65px 8%;
+}
+
+.seccion h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.descripcion {
+    color: #94a3b8;
+    margin-bottom: 30px;
+}
+
+/* TARJETAS DE PRODUCTOS Y SERVICIOS */
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.tarjeta {
+    background-color: #111c2e;
+    border: 1px solid #263449;
+    border-radius: 12px;
+    padding: 26px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+}
+
+.icono {
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.tarjeta h3 {
+    margin-bottom: 10px;
+    color: #f8fafc;
+}
+
+.tarjeta p {
+    color: #94a3b8;
+}
+
+/* CONTACTO */
+.contacto {
+    background-color: #111827;
+    text-align: center;
+}
+
+.contacto p {
+    color: #cbd5e1;
+    margin: 12px 0 24px;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    padding: 24px 8%;
+    text-align: center;
+    color: #94a3b8;
+    border-top: 1px solid #263449;
+    font-size: 14px;
+}
+
+/* ADAPTACIÓN A CELULARES */
+@media (max-width: 600px) {
+    header {
+        padding: 20px 6%;
+    }
+
+    nav {
+        gap: 14px;
+    }
+
+    .hero {
+        padding: 65px 6%;
+    }
+
+    .seccion {
+        padding: 45px 6%;
+    }
+}
+
+/* ===== CONTACTO WORLDTECH ===== */
+
+.contacto-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #cbd5e1;
+    line-height: 1.7;
+}
+
+.contacto-contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 30px auto 0;
+    align-items: stretch;
+}
+
+.contacto-info,
+.formulario-contacto {
+    background: #111c30;
+    border: 1px solid #263c5c;
+    border-radius: 16px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.contacto-info h3,
+.formulario-contacto h3 {
+    color: #60a5fa;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.contacto-info p {
+    color: #e2e8f0;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+    margin-bottom: 20px;
+}
+
+.contacto-info a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+.contacto-info a:hover {
+    text-decoration: underline;
+}
+
+.redes-sociales {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 15px 0 20px;
+}
+
+.redes-sociales a {
+    background: #1d4ed8;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.redes-sociales a:hover {
+    background: #2563eb;
+}
+
+.aviso-contacto {
+    font-size: 12px;
+    color: #94a3b8 !important;
+}
+
+.formulario-contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario-contacto label {
+    color: #e2e8f0;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    background: #0b1220;
+    color: white;
+    font: inherit;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+    outline: 2px solid #3b82f6;
+    border-color: #60a5fa;
+}
+
+.formulario-contacto textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.formulario-contacto .boton {
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+    font: inherit;
+}
+
+@media (max-width: 600px) {
+    .contacto-info,
+    .formulario-contacto {
+        padding: 18px;
+    }
+}
